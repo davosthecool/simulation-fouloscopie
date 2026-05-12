@@ -4,4 +4,4 @@
 
 [node name="Main" type="Node2D" unique_id=1689535910]
 script = ExtResource("1_0xm2m")
-NumberOfAgents = 10
+NumberOfAgents = 100
