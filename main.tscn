@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://5gyo4xkh1gdu"]
+
+[ext_resource type="Script" uid="uid://0imxv7lp34rd" path="res://main.gd" id="1_0xm2m"]
+
+[node name="Main" type="Node2D" unique_id=1689535910]
+script = ExtResource("1_0xm2m")
+NumberOfAgents = 10

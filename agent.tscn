@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cujer14do045u"]
+
+[ext_resource type="Script" uid="uid://buc8a3yfoqk1g" path="res://agent.gd" id="1_jv27j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jv27j"]
+radius = 50.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dhb2b"]
+radius = 20.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8l2ru"]
+radius = 35.0
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_7dm0k"]
+size = Vector2(10, 10)
+
+[node name="Agent" type="CharacterBody2D" unique_id=270133678]
+motion_mode = 1
+script = ExtResource("1_jv27j")
+
+[node name="AttractionCircle" type="Area2D" parent="." unique_id=1123035548]
+collision_layer = 4
+
+[node name="AttractionCircleShape" type="CollisionShape2D" parent="AttractionCircle" unique_id=1842666829]
+shape = SubResource("CircleShape2D_jv27j")
+
+[node name="RepulsionCircle" type="Area2D" parent="." unique_id=1983823652]
+collision_layer = 4
+
+[node name="RepulsionCircleShape" type="CollisionShape2D" parent="RepulsionCircle" unique_id=842100525]
+shape = SubResource("CircleShape2D_dhb2b")
+
+[node name="AlignmentCircle" type="Area2D" parent="." unique_id=1558475895]
+collision_layer = 4
+
+[node name="AlignmentCircleShape" type="CollisionShape2D" parent="AlignmentCircle" unique_id=1012328648]
+shape = SubResource("CircleShape2D_8l2ru")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=842257545]
+texture = SubResource("PlaceholderTexture2D_7dm0k")
